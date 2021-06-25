@@ -20,6 +20,7 @@ $titolo = 'Film On-line';
 
 <body>
     <div class="container">
+
         <?php foreach ($movies as $move) : ?>
             <div class="card">
                 <div class="card_img">
@@ -37,7 +38,7 @@ $titolo = 'Film On-line';
                         <?php endfor; ?>
                     </span>
                     <span>Prezzo: € <?= $move->price; ?></span>
-                    <a href="">trama...</a>
+                    <button class="btn">trama...</button>
                 </div>
                 <div class="card_footer">
                     <span>Anno: <?= $move->year; ?> </span>
@@ -46,6 +47,7 @@ $titolo = 'Film On-line';
             </div>
         <?php endforeach; ?>
     </div>
+    <script src="./asset/js/main.js"></script>
 </body>
 
 </html>

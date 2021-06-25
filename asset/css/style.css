@@ -26,10 +26,6 @@ body
     border-radius: 8px;
     background-color: #1b1818a6;
 }
-.card:hover
-{
-    transform: scale(1.05);
-}
 .card_img
 {
     width: 330px;
@@ -66,10 +62,9 @@ body
     flex-wrap: wrap;
     align-content: space-around;
 }
-.card_body a
+.btn
 {
-    color: inherit;
-    text-decoration: none;
+    color: #fff;
     margin: 5px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -79,7 +74,7 @@ body
     border-radius: 5px;
     cursor: pointer;
 }
-.card_body a:active
+.card_body button:active
 {
     transform: scale(0.98);
 }
