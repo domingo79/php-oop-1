@@ -12,19 +12,38 @@ body
 {
     width: 80%;
     margin: 0 auto;
-    color: #fff;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-.card
-{
+.scene {
     width: 350px;
     height: 400px;
+    border: 1px solid #CCC;
     margin: 1.5rem;
+    perspective: 1000px;
+    border-radius: 8px;
+
+}
+.card
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
     border: 1px solid rgb(98, 139, 165);
     border-radius: 8px;
     background-color: #1b1818a6;
+}
+.card_face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .card_img
 {
@@ -64,15 +83,16 @@ body
 }
 .btn
 {
-    color: #fff;
+    color: rgb(255, 255, 255);
     margin: 5px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    border: 1px solid rgb(36, 36, 138);
+    border: 3px solid rgb(32 32 81);
     padding: 10px 20px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    background-color: rgb(61 99 99 / 42%);
 }
 .card_body button:active
 {
@@ -103,3 +123,17 @@ i
     font-size: 0.8rem;
     color: rgb(195 198 18);
 }
+.face_front {
+    /* background: red; */
+}
+  
+.face_back {
+    padding: 1rem;
+    transform: rotateY(180deg);
+}
+.card { 
+    transform-origin: center right; 
+}
+.card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+} 
