@@ -2,7 +2,7 @@
 $movies = [
     new Movie(
         'film1',
-        'Ricomincio da te.',
+        'Ricomincio da te',
         'https://cdn.chili.com/images/public/cms/66/8d/bc/06/668dbc06-9d24-459a-bf61-7d7b1d998843.jpg?width=495',
         9.99,
         'Romantico',
