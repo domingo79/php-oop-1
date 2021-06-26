@@ -1,10 +1,3 @@
-// window.addEventListener('load', (event) => {
-//     console.log('page is fully loaded');
-// });
+function myFunction() {
 
-
-var card = document.querySelector('.card');
-
-card.addEventListener('click', function () {
-    card.classList.toggle('is-flipped');
-});
+}

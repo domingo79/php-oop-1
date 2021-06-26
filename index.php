@@ -14,6 +14,7 @@ $titolo = 'Film On-line';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2c30adbff5.js" crossorigin="anonymous"></script>
+    <script src="./asset/js/main.js"></script>
     <link rel="stylesheet" href="./asset/css/style.css">
     <title><?= $titolo ?></title>
 </head>
@@ -41,7 +42,7 @@ $titolo = 'Film On-line';
                                 <?php endfor; ?>
                             </span>
                             <span>Prezzo: € <?= $move->price; ?></span>
-                            <button class="btn">trama...</button>
+                            <button onclick="myFunction()" class="btn">trama...</button>
                         </div>
                         <div class="card_footer">
                             <span>Anno: <?= $move->year; ?> </span>
@@ -56,7 +57,7 @@ $titolo = 'Film On-line';
             </div>
         <?php endforeach; ?>
     </div>
-    <script src="./asset/js/main.js"></script>
+
 
 </body>
 
