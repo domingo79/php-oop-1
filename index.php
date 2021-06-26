@@ -64,7 +64,7 @@ $titolo = 'Film On-line';
     <script type="text/javascript">
         $(document).ready(function() {
             $('.card').click(function() {
-                $('.card').toggleClass('is-flipped');
+                $(this).toggleClass('is-flipped');
             })
         });
     </script>
