@@ -1,5 +1,6 @@
-var card = document.querySelector('.card');
+// var card = document.querySelector('.card');
 
-card.addEventListener('click', function () {
-    card.classList.toggle('is-flipped');
-});
+// card.addEventListener('click', function () {
+//     card.classList.toggle('is-flipped');
+// });
+
