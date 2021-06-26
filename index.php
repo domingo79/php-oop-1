@@ -42,7 +42,7 @@ $titolo = 'Film On-line';
                                 <?php endfor; ?>
                             </span>
                             <span>Prezzo: € <?= $move->price; ?></span>
-                            <button onclick="myFunction()" class="btn">trama...</button>
+                            <button class="btn">trama...</button>
                         </div>
                         <div class="card_footer">
                             <span>Anno: <?= $move->year; ?> </span>
